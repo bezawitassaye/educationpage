@@ -1,0 +1,17 @@
+<div class="third">
+  <% data.forEach(post => { %>
+    <a href="">
+      <div class="post-container">
+        <img src="<%= post.image %>" alt="" class="product-img">
+        <span class="pp"><%= post.name %></span>
+        
+        <span class="pp1 <%= post.costClass %>"><%= post.cost %></span>
+        <span class="pp2 <%= post.costClass %>"><%= post.addto %></span>
+      </div>
+    </a>
+  <% }) %>
+</div>
+
+  
+  
+  

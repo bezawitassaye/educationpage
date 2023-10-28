@@ -1,0 +1,48 @@
+<header>
+    
+
+<header class="header">
+    <div> <a href="/" class="logo">Logo</a> </div>
+    <div class="div-a">
+      <nav class="header__nav">
+        <a href="/">Home</a>
+        <a href="/about">about</a>
+        <a href="/course">course</a>
+        <a href="/contact">contact</a>
+       
+  
+        <% if (login) { %>
+          <a href="/logout">logout</a>
+         
+          
+        <% } else { %>
+          <a href="/signup">Login</a>
+        <a href="/signin">Register</a>
+        <% } %>
+       
+         
+          </a>
+      </nav>
+    </div>
+   
+  
+    <div class="header__button">
+    
+  
+        <a href="/shopping">
+          <i class="fa-sharp fa-solid fa-cart-shopping"></i>
+           <span><%= session.cart.totalQty  %></span>
+        </a>
+     
+   <input type="text" class="searchbtn" aria-expanded="false"
+    placeholder="Search"
+    >
+  
+    </div>
+  </header>
+  
+  
+  
+  
+  
+</header>

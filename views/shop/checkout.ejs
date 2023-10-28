@@ -1,0 +1,49 @@
+
+
+<div class="parent-form">
+    <div class="parent-form2">
+        <h1>Checkout</h1>
+        <h3>Your Total: $<%= total %></h3>
+         <form action="/checkout" method="post" id="checkout-form">
+            <div>
+                <p>Name</p>
+                <input type="text" class="inp">
+            </div>
+        
+            <div>
+                <p>Address</p>
+                <input type="text" class="inp">
+            </div>
+        
+            <div>
+                <p>Card Holder Name</p>
+                <input type="text" class="inp">
+            </div>
+        
+            <div>
+                <p>Credit Card Number</p>
+                <input type="text" class="inp">
+            </div>
+        
+            <div class="lasts">
+                <div>
+                    <p>Expiration Month</p>
+                    <input type="text">
+                </div>
+        
+                <div>
+                    <p>Expiration Year</p>
+                    <input type="text">
+                </div>
+            </div>
+        
+            <div>
+                <p>CVC</p>
+                <input type="text" class="inp">
+            </div>
+         </form>
+    
+         <button id="buy-button">Buy now</button>
+    </div>
+  
+</div>

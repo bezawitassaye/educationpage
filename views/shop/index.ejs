@@ -1,0 +1,51 @@
+
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+<div class="first">
+   <div class="ptag-home"><p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Numquam excepturi illum odit officiis minus, repellendus hic aspernatur voluptatem? Quae in accusantium facere! Rem eos similique animi earum. Ut, voluptas cupiditate.</p>
+   </div> 
+
+   <div class="second">
+    <img src="images/image1.jpg" alt="">
+   </div>
+ 
+</div>
+
+
+
+<div class="third">
+  <% data.forEach(post => { %>
+    <div class="post-container">
+      <img src="<%= post.image %>" alt="" class="product-img">
+      <span class="pp"><%= post.name %></span>
+      <span class="pp1 <%= post.costClass %>"><%= post.price %></span>
+      
+      <a href="/add-to-cart/<%= post._id %>"><button type="submit" class="pp2 <%= post.costClass %>">Add to Cart</button></a>
+      
+    </div>
+  <% }) %>
+</div>
+  
+  
+    <a href="/course">
+      <button class="morebtn">More</button>
+    </a>
+  </div>
+   
+        
+      
+
+<div class="fifth"><p>frequnt</p></div>
+<div class="fourth">
+   
+    <div><p>nsodvjwoifjbfviu</p></div>
+    <div><p>nsodvjwoifjbfviu</p></div>
+    <div><p>nsodvjwoifjbfviu</p></div>
+    <div><p>nsodvjwoifjbfviu</p></div>
+    <div><p>nsodvjwoifjbfviu</p></div>
+    <div><p>nsodvjwoifjbfviu</p></div>
+</div>
+
+<%- include('../partials/footer.ejs')  %>
+
+</script>
